@@ -28,8 +28,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * Reads /proc/uid_cputime/show_uid_stat which has the line format:
- *
  * uid: user_time_micro_seconds system_time_micro_seconds power_in_milli-amp-micro_seconds
  *
  * This provides the time a UID's processes spent executing in user-space and kernel-space.
@@ -39,7 +37,6 @@ import java.io.IOException;
  */
 public class KernelUidCpuTimeReader {
     private static final String TAG = "KernelUidCpuTimeReader";
-    private static final String sProcFile = "/proc/uid_cputime/show_uid_stat";
     private static final String sRemoveUidProcFile = "/proc/uid_cputime/remove_uid_range";
 
     /**
@@ -68,7 +65,6 @@ public class KernelUidCpuTimeReader {
      */
     public void readDelta(@Nullable Callback callback) {
         long nowUs = SystemClock.elapsedRealtime() * 1000;
-        try (BufferedReader reader = new BufferedReader(new FileReader(sProcFile))) {
             TextUtils.SimpleStringSplitter splitter = new TextUtils.SimpleStringSplitter(' ');
             String line;
             while ((line = reader.readLine()) != null) {
@@ -137,9 +133,6 @@ public class KernelUidCpuTimeReader {
                 mLastSystemTimeUs.put(uid, systemTimeUs);
                 mLastPowerMaUs.put(uid, powerMaUs);
             }
-        } catch (IOException e) {
-            Slog.e(TAG, "Failed to read uid_cputime: " + e.getMessage());
-        }
         mLastTimeReadUs = nowUs;
     }
 
