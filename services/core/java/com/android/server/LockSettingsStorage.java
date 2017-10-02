@@ -299,22 +299,6 @@ class LockSettingsStorage {
 
         RandomAccessFile raf = null;
         byte[] stored = null;
-        try {
-            raf = new RandomAccessFile(name, "r");
-            stored = new byte[(int) raf.length()];
-            raf.readFully(stored, 0, stored.length);
-            raf.close();
-        } catch (IOException e) {
-            Slog.e(TAG, "Cannot read file " + e);
-        } finally {
-            if (raf != null) {
-                try {
-                    raf.close();
-                } catch (IOException e) {
-                    Slog.e(TAG, "Error closing file " + e);
-                }
-            }
-        }
         mCache.putFileIfUnchanged(name, stored, version);
         return stored;
     }
