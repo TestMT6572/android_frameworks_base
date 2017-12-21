@@ -22,6 +22,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Content description of the light brightness slider (not shown on the screen). [CHAR LIMIT=NONE] -->
   <string name="accessibility_notification_brightness">Işık parlaklığı</string>
+  <!-- Content description of the profiles tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_off">Profiller kapalı.</string>
+  <!-- Content description of the profiles tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles">Profil: <xliff:g id="profile" example="Default">%s</xliff:g>.</string>
+  <!-- Announcement made when the profiles tile changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_changed_off">Profiller kapatıldı.</string>
+  <!-- Announcement made when the profiles tile changes (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_changed"><xliff:g id="profile" example="Default">%s</xliff:g> profiline geçildi.</string>
+  <!-- Content description of the profiles tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="quick_settings_profiles_off">Profiller kapalı.</string>
+  <!-- Content description of the system profiles  -->
+  <string name="quick_settings_profiles">Sistem profilleri</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Işık ayarları</string>
   <string name="led_notification_text">LED ışık ayarlar tarafından etkinleştirilmiş</string>
@@ -181,5 +193,29 @@
   <string name="quick_settings_sync_label">Eşitleme</string>
   <string name="quick_settings_volume_panel_label">Ses paneli</string>
   <!-- Content description for Accessibility on unlocked tasks in recents -->
+  <string name="accessibility_lock_task"><xliff:g id="task">%1$s</xliff:g> kapatılmasını önle</string>
   <!-- Content description for Accessibility on locked tasks in recents -->
+  <string name="accessibility_unlock_task"><xliff:g id="task">%1$s</xliff:g> kapatılmasına izin ver</string>
+  <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Otomatik</string>
+  <string name="live_display_auto_summary">Gün batımından ve gün doğumundan sonra ekranın renk sıcaklığını otomatik olarak ayarlar</string>
+  <string name="live_display_off">Kapalı</string>
+  <string name="live_display_off_summary">Tüm ayarları devre dışı bırak</string>
+  <string name="live_display_day">Gündüz</string>
+  <string name="live_display_day_summary">Sadece gündüz ayarlarını kullan</string>
+  <string name="live_display_night">Gece</string>
+  <string name="live_display_night_summary">Sadece gece ayarlarını kullan</string>
+  <string name="live_display_outdoor">Açık alan (parlak güneş)</string>
+  <string name="live_display_outdoor_summary">Sadece açık alan ayarlarını kullan</string>
+  <string name="live_display_hint">LiveDisplay, göz yorgunluğunuzu azaltmanıza ve gece uyumanıza yardımcı olabilir. Denemek için buraya tıklayın!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay kapalı.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: otomatik mod.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: gündüz modu.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: gece modu.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: açık alan modu.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay kapatıldı.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay otomatik moda geçti.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay gündüz moduna geçti.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay gece moduna geçti.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay açık alan moduna geçti.</string>
 </resources>

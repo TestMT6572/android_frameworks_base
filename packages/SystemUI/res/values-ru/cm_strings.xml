@@ -22,6 +22,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Content description of the light brightness slider (not shown on the screen). [CHAR LIMIT=NONE] -->
   <string name="accessibility_notification_brightness">Яркость</string>
+  <!-- Content description of the profiles tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_off">Профили выключены.</string>
+  <!-- Content description of the profiles tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles">Профиль: <xliff:g id="profile" example="Default">%s</xliff:g>.</string>
+  <!-- Announcement made when the profiles tile changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_changed_off">Профили выключены.</string>
+  <!-- Announcement made when the profiles tile changes (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_changed">Профиль изменён на <xliff:g id="profile" example="Default">%s</xliff:g>.</string>
+  <!-- Content description of the profiles tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="quick_settings_profiles_off">Профили выключены.</string>
+  <!-- Content description of the system profiles  -->
+  <string name="quick_settings_profiles">Профили системы</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Настройки яркости</string>
   <string name="led_notification_text">Светодиод включен параметрами</string>
@@ -182,5 +194,29 @@
   <string name="quick_settings_sync_label">Синхронизация</string>
   <string name="quick_settings_volume_panel_label">Панель громкости</string>
   <!-- Content description for Accessibility on unlocked tasks in recents -->
+  <string name="accessibility_lock_task">Запретить закрывать приложение <xliff:g id="task">%1$s</xliff:g></string>
   <!-- Content description for Accessibility on locked tasks in recents -->
+  <string name="accessibility_unlock_task">Разрешить закрывать приложение <xliff:g id="task">%1$s</xliff:g></string>
+  <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Автоматически</string>
+  <string name="live_display_auto_summary">Автоматическая подстройка цветовой температуры экрана после заката и восхода солнца</string>
+  <string name="live_display_off">Отключить</string>
+  <string name="live_display_off_summary">Отключить автоподстройку</string>
+  <string name="live_display_day">День</string>
+  <string name="live_display_day_summary">Только дневные настройки</string>
+  <string name="live_display_night">Ночь</string>
+  <string name="live_display_night_summary">Только ночные настройки</string>
+  <string name="live_display_outdoor">На улице (яркое солнце)</string>
+  <string name="live_display_outdoor_summary">Только уличный режим</string>
+  <string name="live_display_hint">Функция LiveDisplay поможет снизить зрительное напряжение и улучшить сон. Нажмите здесь, чтобы попробовать!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay выключен.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: автоматический режим.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: дневной режим.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: ночной режим.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: режим улицы.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay выключен.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay переключён в автоматический режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay переключён в дневной режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay переключён в ночной режим.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay переключён в режим «на улице».</string>
 </resources>
